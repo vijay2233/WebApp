@@ -91,7 +91,7 @@
 	<!--
 	<repositories>
 		<repository>
-			<id>nexus</id>
+			<id>deployment</id>
 			<name>libs-release</name>
 			<url>http://54.88.254.134:8081/nexus/content/artifactory/libs-release</url>
 		</repository>
@@ -110,7 +110,7 @@
 		</snapshotRepository>
 	</distributionManagement>
 	<profiles>
-		<profile>
+		<!-- <profile>
 			<id>sonar</id>
 			<activation>
 				<activeByDefault>false</activeByDefault>
@@ -119,11 +119,12 @@
 				<sonar.jdbc.url>jdbc:postgresql://34.238.44.17/sonar</sonar.jdbc.url>
 				<sonar.jdbc.driver>org.postgresql.Driver</sonar.jdbc.driver>
 				<sonar.jdbc.username>sonar</sonar.jdbc.username>
-				<sonar.jdbc.password>sonar</sonar.jdbc.password>
-				<!-- SERVER ON A REMOTE HOST -->
+				<sonar.jdbc.password>sonar</sonar.jdbc.password>  <!-- SERVER ON A REMOTE HOST 
+				
 				<sonar.host.url>http://${sonarServer}:9000</sonar.host.url>
 			</properties>
 		</profile>
+		-->
 		<profile>
 			<id>jacoco</id>
 			<!-- https://www.jacoco.org/jacoco/ -->
