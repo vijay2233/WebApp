@@ -120,7 +120,7 @@
 				<sonar.jdbc.driver>org.postgresql.Driver</sonar.jdbc.driver>
 				<sonar.jdbc.username>sonar</sonar.jdbc.username>
 				<sonar.jdbc.password>sonar</sonar.jdbc.password>  
-				<!-- SERVER ON A REMOTE HOST 
+				 SERVER ON A REMOTE HOST 
 				<sonar.host.url>http://34.219.116.7:9000</sonar.host.url>
 			</properties>
 		</profile>-->
