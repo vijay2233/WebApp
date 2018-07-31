@@ -108,8 +108,8 @@
 			<name>Nexus Snapshots Repository</name>
 			<url>http://54.88.254.134:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
-	</distributionManagement>-->
-	<profiles> 
+	</distributionManagement>
+	 
 		 <profile>
 			<id>sonar</id>
 			<activation>
@@ -120,11 +120,11 @@
 				<sonar.jdbc.driver>org.postgresql.Driver</sonar.jdbc.driver>
 				<sonar.jdbc.username>sonar</sonar.jdbc.username>
 				<sonar.jdbc.password>sonar</sonar.jdbc.password>  
-				<!-- SERVER ON A REMOTE HOST -->
+				<!-- SERVER ON A REMOTE HOST 
 				<sonar.host.url>http://34.219.116.7:9000</sonar.host.url>
 			</properties>
-		</profile>
-		
+		</profile>-->
+		<profiles>
 		<profile>
 			<id>jacoco</id>
 			<!-- https://www.jacoco.org/jacoco/ -->
