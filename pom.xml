@@ -108,8 +108,8 @@
 			<name>Nexus Snapshots Repository</name>
 			<url>http://54.88.254.134:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
-	</distributionManagement>
-	<profiles> -->
+	</distributionManagement>-->
+	<profiles> 
 		 <profile>
 			<id>sonar</id>
 			<activation>
