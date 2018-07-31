@@ -12,9 +12,9 @@
 		<!-- <argLine>-XX:MaxPermSize=512m</argLine> -->
 	</properties>
 	<scm>
-		<url>https://github.com/venkatasykam/DevOpsWebApp.git</url>
-		<connection>scm:git:https://github.com/venkatasykam/DevOpsWebApp.git</connection>
-		<developerConnection>scm:git:https://github.com/venkatasykam/DevOpsWebApp.git</developerConnection>
+		<url>https://github.com/vijay2233/WebApp.git</url>
+		<connection>scm:git:https://github.com/vijay2233/WebApp.git</connection>
+		<developerConnection>scm:git:https://github.com/vijay2233/WebApp.git</developerConnection>
 		<tag>master-WebApp-1.0.0-RC-4</tag>
 	</scm>
 	<dependencies>
@@ -69,11 +69,11 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-			<plugin>
+			 <!-- <plugin>
 				 <!-- Add/update this in tomcat-home/conf/tomcat-users.xml file
 					<role rolename="manager-gui" />
 					<user username="tomcat" password="s3cret" roles="admin,tomcat,manager-gui,manager-script" />
-					Run the maven goal tomcat7:deploy to deploy your war package to tomcat server. -->
+					Run the maven goal tomcat7:deploy to deploy your war package to tomcat server.
 				
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
@@ -85,7 +85,7 @@
 					<username>tomcat</username>
 					<password>s3cret</password>
 				</configuration>
-			</plugin>
+			</plugin> -->
 		</plugins>
 	</build>
 	<!--
@@ -96,7 +96,7 @@
 			<url>http://54.88.254.134:8081/nexus/content/artifactory/libs-release</url>
 		</repository>
 	</repositories>
-	-->
+	
 	<distributionManagement>
 		<repository>
 			<id>deployment</id>
@@ -109,22 +109,22 @@
 			<url>http://54.88.254.134:8081/nexus/content/repositories/snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
-	<profiles>
-		<!-- <profile>
+	<profiles> -->
+		 <profile>
 			<id>sonar</id>
 			<activation>
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
-				<sonar.jdbc.url>jdbc:postgresql://34.238.44.17/sonar</sonar.jdbc.url>
+				<sonar.jdbc.url>jdbc:postgresql://34.219.116.7/sonar</sonar.jdbc.url>
 				<sonar.jdbc.driver>org.postgresql.Driver</sonar.jdbc.driver>
 				<sonar.jdbc.username>sonar</sonar.jdbc.username>
-				<sonar.jdbc.password>sonar</sonar.jdbc.password>  <!-- SERVER ON A REMOTE HOST 
-				
-				<sonar.host.url>http://${sonarServer}:9000</sonar.host.url>
+				<sonar.jdbc.password>sonar</sonar.jdbc.password>  
+				<!-- SERVER ON A REMOTE HOST -->
+				<sonar.host.url>http://34.219.116.7:9000</sonar.host.url>
 			</properties>
 		</profile>
-		-->
+		
 		<profile>
 			<id>jacoco</id>
 			<!-- https://www.jacoco.org/jacoco/ -->
