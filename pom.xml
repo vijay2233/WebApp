@@ -95,21 +95,21 @@
 			<name>libs-release</name>
 			<url>http://54.88.254.134:8081/nexus/content/artifactory/libs-release</url>
 		</repository>
-	</repositories>
+	</repositories> -->
 	
 	<distributionManagement>
-		<repository>
-			<id>deployment</id>
-			<name>Nexus Release Repository</name>
-			<url>http://54.88.254.134:8081/nexus/content/repositories/releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>deployment</id>
-			<name>Nexus Snapshots Repository</name>
-			<url>http://54.88.254.134:8081/nexus/content/repositories/snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
-	 
+	<repository>
+		<id>deployment</id> <!-- this ID should match with server id which we configure in settings.xml file. -->
+		<name>Nexus Release Repository</name>
+		<url>http://3.84.36.72:8081/nexus/content/repositories/releases/</url>
+	</repository>
+	<snapshotRepository>
+		<id>deployment</id>
+		<name>Nexus Snapshots Repository</name>
+		<url>http://3.84.36.72:8081/nexus/content/repositories/snapshots/</url>
+	</snapshotRepository>
+      </distributionManagement>
+	  <!--
 		 <profile>
 			<id>sonar</id>
 			<activation>
