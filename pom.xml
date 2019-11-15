@@ -3,7 +3,7 @@
 	<groupId>com.devops.devopswebapp</groupId>
 	<artifactId>DevOpsWebApp</artifactId>
 	<packaging>war</packaging>
-	<version>1.0.7-SNAPSHOT</version>
+	<version>1.0.7</version>
 	<name>${project.artifactId}-${project.version}</name>
 
 	<properties>
